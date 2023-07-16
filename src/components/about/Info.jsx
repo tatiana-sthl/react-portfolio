@@ -4,17 +4,22 @@ export const Info = ({ items, Heading }) => {
   return (
     <>
       {" "}
-      <Heading title='about info' />
-      <div className='about_details_content'>
-        {items.deatils.map((val) => (
+      <Heading title='Mon histoire' />
+      <div className='about_details_bio'>
+        {items.bio.map((val) => (
           <>
-            <div className='about_details_content_box'>
-              <div className='icon'>
-                <span>{val.icon}</span>
+            <div className='about_details_bio_box'>
+              <div className='about_details_bio_box_item'>
+                <p>{val.para1}</p>
               </div>
-              <div className='about_details_content_box_text'>
-                <h4>{val.text}</h4>
-                <span>{val.value}</span>
+              <div className='about_details_bio_box_item'>
+                <p>{val.para2}</p>
+              </div>
+              <div className='about_details_bio_box_item'>
+                <p>{val.para3}</p>
+              </div>
+              <div className='about_details_bio_box_item'>
+                <img src={val.images} alt='' />
               </div>
             </div>
           </>

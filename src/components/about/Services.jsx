@@ -4,9 +4,9 @@ export const Services = ({ items, Heading }) => {
   return (
     <>
       <div className='about_services'>
-        <Heading title='What I Do?' />
+        <Heading title='Mes projets' />
         <div className='about_services_boxs'>
-          {items.serives.map((item) => (
+          {items.services.map((item) => (
             <>
               <div className='card'>
                 <div className='icon'>
