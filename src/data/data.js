@@ -34,16 +34,19 @@ export const socialIcon = [
   {
     id: 1,
     icon: <FaTwitter />,
+    url: "https://twitter.com/ThathiDev",
     class: "twitter",
   },
   {
     id: 2,
     icon: <FaGithub />,
+    url: "https://github.com/tatiana-sthl",
     class: "dribbble",
   },
   {
     id: 3,
     icon: <FaLinkedin />,
+    url: "https://www.linkedin.com/in/tatiana-stahli/",
     class: "instagram",
   },
 ]

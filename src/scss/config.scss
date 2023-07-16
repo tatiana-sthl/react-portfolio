@@ -175,6 +175,7 @@ $sizes: (
   &_bicon {
     font-size: 22px;
     @include zindex;
+    margin-right: 7px;
   }
 
   &::after {

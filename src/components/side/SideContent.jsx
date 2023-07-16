@@ -14,9 +14,11 @@ export const SideContent = () => {
           </div>
           <div className='sideContent_top_social'>
           {socialIcon.map((icons) => (
-            <div className={icons.class}>
-              <span>{icons.icon}</span>
-            </div>
+            <a href={icons.url} target="_blank" rel="noreferrer" key={icons.id}>
+              <div className={icons.class}>
+                <span>{icons.icon}</span>
+              </div>
+            </a>
           ))}
         </div>
           
@@ -26,9 +28,9 @@ export const SideContent = () => {
           <div className='sideContent_bottom_buttonGroup'>
             
             <button className='sm_button'>
-              <span>
+              <span className="span_svg">
                 <FiDownloadCloud className='button_bicon' />
-                <span>Télécharger mon CV</span>
+                <a href="/CV Tatiana Moula-Stahli.pdf" target="_blank">Télécharger mon CV </a>
               </span>
             </button>
           </div>
