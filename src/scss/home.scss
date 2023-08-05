@@ -48,52 +48,46 @@
 
     // Styles pour le composant Bio
     .competences {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem; 
+
+    .intercalated-row {
       display: flex;
       flex-wrap: wrap;
-    }
+      justify-content: center;
 
-    .competence {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 20px;
-      transition: transform 0.3s ease-in-out;
+      .competence {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.5rem;
+        transition: transform 0.3s ease-in-out;
 
-      .icone-wrapper {
-        @include circle($circle-diameter, $circle-background-color);
-        position: relative;
+        .icone-wrapper {
+          @include circle($circle-diameter, $circle-background-color);
+          position: relative;
 
-        // Crée l'effet de rotation en 3D
-        &:hover {
-          transform: rotateX(30deg) rotateY(30deg);
-        }
+          &:hover {
+            transform: rotateX(30deg) rotateY(30deg);
+          }
 
-        img {
-          width: 60%; // Ajustez la taille de l'icône selon vos besoins
-          
-          fill: white; // Couleur par défaut de l'icône
-          transition: fill 0.3s ease-in-out;
+          img {
+            width: 60%; 
+            fill: white;
+            transition: fill 0.3s ease-in-out;
+          }
         }
       }
-    }
 
-  }
-
-  &_services {
-    &_boxs {
-      @include grids(3, 3fr, 30px);
-      .card {
-        @include cards(20px, $lightblue, $hover: true);
-      }
-      .icon {
-        @include icons(70px, 70px, $black, 25px, 70px, $indigo);
-        color: $indigo;
-        &:hover {
-          color: $white;
-        }
+      .competence:nth-child(n + 7) {
+        transform: translateY(-40px); 
       }
     }
   }
+}
+  
 
   &_sider {
     position: relative;

@@ -36,13 +36,24 @@ export const Bio = ({ items, Heading }) => {
     <>
       <Heading title="Mon stack" />
       <div className="competences">
-        {competences.map((competence, index) => (
-          <div key={index} className="competence">
-            <div className="icone-wrapper">
-            <img src={competence.icone} alt={competence.nom} />
+        <div className="intercalated-row">
+          {competences.slice(0, 5).map((competence, index) => (
+            <div key={index} className="competence">
+              <div className="icone-wrapper">
+                <img src={competence.icone} alt={competence.nom} />
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
+        <div className="intercalated-row">
+          {competences.slice(5).map((competence, index) => (
+            <div key={index} className="competence">
+              <div className="icone-wrapper">
+                <img src={competence.icone} alt={competence.nom} />
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
