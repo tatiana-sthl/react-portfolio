@@ -30,7 +30,7 @@ export const Slider = ({ items, Heading }) => {
   return (
     <>
       <div className='about_sider'>
-        <Heading title='What They Says?' />
+        <Heading title='Mes projets' />
 
         <div className='about_sider_content'>
           {data.map((slide, index) => (
