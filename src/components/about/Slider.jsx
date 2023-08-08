@@ -42,7 +42,6 @@ export const Slider = ({ items, Heading }) => {
                   </div>
                   <div className='text'>
                     <p>{slide.desc}</p>
-                    <h3>{slide.name}</h3>
                     <label>{slide.link}</label>
                   </div>
                 </div>
