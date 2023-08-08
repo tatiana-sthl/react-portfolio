@@ -31,7 +31,6 @@ export const Slider = ({ items, Heading }) => {
     <>
       <div className='about_sider'>
         <Heading title='Mes projets' />
-
         <div className='about_sider_content'>
           {data.map((slide, index) => (
             <>

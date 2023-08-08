@@ -1,4 +1,6 @@
 import React from "react"
+import { BsArrowRight } from "react-icons/bs"
+
 
 export const Info = ({ items, Heading }) => {
   return (
@@ -14,13 +16,8 @@ export const Info = ({ items, Heading }) => {
               </div>
               <div className='about_details_bio_box_item'>
                 <p>{val.para2}</p>
-              </div>
-              <div className='about_details_bio_box_item'>
-                <p>{val.para3}</p>
-              </div>
-              <div className='about_details_bio_box_item'>
-                <img src={val.images} alt='' />
-              </div>
+                <a href="http://localhost:3000/contact" className='about_details_bio_box_contact'><BsArrowRight />&nbsp;Pour me contacter, c'est par ici</a>
+              </div>              
             </div>
           </>
         ))}

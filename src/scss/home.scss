@@ -27,6 +27,14 @@
           font-size: 16px;
           line-height: 2;
         }
+        
+        &_contact {
+          color: #ceac16;
+          display: flex;
+          align-items: center;
+          margin-top: 1rem;
+          justify-content: flex-end;
+        }
       }
     }
 
@@ -46,7 +54,6 @@
       transition: transform 0.3s ease-in-out;
     }
 
-    // Styles pour le composant Bio
     .competences {
     display: flex;
     flex-wrap: wrap;
@@ -100,7 +107,7 @@
         align-items: center;
 
         img {
-          width:100%;
+          height: 300px;
           box-shadow: 0 0 1rem rgb(255, 255, 255, 0.8);
         }
         

@@ -50,8 +50,6 @@ export const about = [
       {
         para1: "Une jeune femme d'actuellement 28 ans, qui a suivi des études pour travailler dans le milieu de l'agriculture, puis des études pour travailler dans le milieu de la culture, qui a fait un service civique pour l'UNICEF, puis qui a travaillé dans deux musées et deux bibliothèques.",
         para2: "Et après moults aventures, décide en août 2021 d'apprendre à coder, comprend que cela lui plaît beaucoup, et veut en faire son métier. Je me passionne pour le trio HTML/CSS/Javascript avec son lot de framework tels que React ou Bootstrap, que j'apprends à dompter petit à petit.",
-        para3: "",
-        images: "",
       },
     ],
 
@@ -69,14 +67,14 @@ export const about = [
         desc: "They'll have to make the best of things its an uphill climb. Californ'y is the place you oughtto be So they loaded up the truck and moved to Beverly. Hills thatSwimmin' pools movie stars.Maybe you and me were never meant to be.",
         name: "Gork Coder",
         link: "gorkcoder.com",
-        cover: "./images/aut2.jpg",
+        cover: "./images/senior-dashboard.png",
       },
       {
         id: 3,
         desc: "They'll have to make the best of things its an uphill climb. Californ'y is the place you oughtto be So they loaded up the truck and moved to Beverly. Hills thatSwimmin' pools movie stars.Maybe you and me were never meant to be.",
         name: "Edward Johnson",
         link: "gorkcoder.com",
-        cover: "./images/aut3.jpg",
+        cover: "./images/projet_final_cs50x.png",
       },
     ],
 
