@@ -40,8 +40,7 @@ export const Slider = ({ items, Heading }) => {
                     <img src={slide.cover} alt='' />
                   </div>
                   <div className='text'>
-                    <p>{slide.desc}</p>
-                    <label>{slide.link}</label>
+                    <p>{slide.desc}<label>{slide.link}</label></p>
                   </div>
                 </div>
               )}

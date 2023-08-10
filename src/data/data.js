@@ -1,7 +1,6 @@
 import { AiOutlineHome } from "react-icons/ai"
-import { FaRegLightbulb, FaTwitter, FaShippingFast, FaGithub, FaLinkedin } from "react-icons/fa"
+import { FaRegLightbulb, FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa"
 import { TbMailOpened } from "react-icons/tb"
-import { MdLocalShipping, MdOutlineLocalShipping } from "react-icons/md"
 
 export const menu = [
   {
@@ -57,48 +56,21 @@ export const about = [
     review: [
       {
         id: 1,
-        desc: "They'll have to make the best of things its an uphill climb. Californ'y is the place you oughtto be So they loaded up the truck and moved to Beverly. Hills thatSwimmin' pools movie stars.Maybe you and me were never meant to be.",
-        name: "Edward Johnson",
+        desc: "Kasa est un exemple de projet que j'ai réalisé en React pour mon dernier projet afin de valider ma formation de développeuse web avec OpenClassrooms. J'ai réalisé plusieurs projets pour obtenir ce diplôme, vous pouvez les retrouver en détail ici :",
         link: "gorkcoder.com",
         cover: "./images/kasa.png",
       },
       {
         id: 2,
-        desc: "They'll have to make the best of things its an uphill climb. Californ'y is the place you oughtto be So they loaded up the truck and moved to Beverly. Hills thatSwimmin' pools movie stars.Maybe you and me were never meant to be.",
-        name: "Gork Coder",
+        desc: "Lors de mon alternance au sein de la start up Eté Indien, j'ai intégré les maquettes fournies par un UX/UI designer afin de permettre aux utilisateurs de la web app de naviguer dans un espace personnel plus moderne et intuitif. Vous pouvez retrouver quelques exemples de mon travail ici : ",
         link: "gorkcoder.com",
         cover: "./images/senior-dashboard.png",
       },
       {
         id: 3,
-        desc: "They'll have to make the best of things its an uphill climb. Californ'y is the place you oughtto be So they loaded up the truck and moved to Beverly. Hills thatSwimmin' pools movie stars.Maybe you and me were never meant to be.",
-        name: "Edward Johnson",
+        desc: "My BookShelf est mon tout premier projet personnel développé dans le cadre du cours Computer Science dispensé par Harvard. Pour obtenir la certification, rendre un projet final utilisant le langage de programmation de son choix était obligatoire. Pour voir mes autres projets personnels, c'est par ici : ",
         link: "gorkcoder.com",
         cover: "./images/projet_final_cs50x.png",
-      },
-    ],
-
-    price: [
-      {
-        id: 1,
-        icon: <MdOutlineLocalShipping />,
-        title: "STARTER PACKAGE",
-        desc: "Suitable for small business or Organizations.",
-        pri: "27.00",
-      },
-      {
-        id: 2,
-        icon: <MdLocalShipping />,
-        title: "BUSINESS PACKAGE",
-        desc: "Suitable for small business or Organizations.",
-        pri: "47.00",
-      },
-      {
-        id: 3,
-        icon: <FaShippingFast />,
-        title: "PRO PACKAGE",
-        desc: "Suitable for small business or Organizations.",
-        pri: "97.00s",
       },
     ],
   },
