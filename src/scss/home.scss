@@ -1,0 +1,162 @@
+.about {
+  &_details {
+    &_content {
+      @include grids(2, 1fr, 40px);
+      margin-bottom: 50px;
+      &_box {
+        @include flex(none, center, none);
+        &_text {
+          margin-left: 20px;
+          h4 {
+            font-weight: 500;
+          }
+          span {
+            color: $lightgray;
+          }
+        }
+      }
+    }
+
+    &_bio {
+      &_box {
+        @include grids(2, 1fr, 30px);
+        text-align: justify;
+
+        p {
+          color: $white;
+          font-size: 16px;
+          line-height: 2;
+        }
+        
+        &_contact {
+          color: #ceac16;
+          display: flex;
+          align-items: center;
+          margin-top: 1rem;
+          justify-content: flex-end;
+        }
+      }
+    }
+
+    // Variables
+    $circle-diameter: 80px;
+    $circle-background-color: #ceac16;
+
+    // Mixin pour le style du cercle
+    @mixin circle($diameter, $background-color) {
+      width: $diameter;
+      height: $diameter;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $background-color;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .competences {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem; 
+
+    .intercalated-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .competence {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.5rem;
+        transition: transform 0.3s ease-in-out;
+
+        .icone-wrapper {
+          @include circle($circle-diameter, $circle-background-color);
+          position: relative;
+
+          &:hover {
+            transform: rotateX(30deg) rotateY(30deg);
+          }
+
+          img {
+            width: 60%; 
+            fill: white;
+            transition: fill 0.3s ease-in-out;
+          }
+        }
+      }
+
+      .competence:nth-child(n + 7) {
+        transform: translateY(-40px); 
+      }
+    }
+  }
+}
+  
+
+  &_sider {
+    position: relative;
+    margin: 50px 0;
+    width: 100%;
+    &_content {
+      .card {
+        @include cards(30px 0, none, $hover: false);
+        display: flex;
+        align-items: center;
+
+        img {
+          height: 300px;
+          box-shadow: 0 0 1rem rgb(255, 255, 255, 0.8);
+        }
+        
+        p {
+          font-style: italic;
+          text-align: justify;
+          margin-left: 2rem;
+        }
+      }
+
+      &_slideButton {
+        width: 100%;
+        @include absolute;
+        left: 0;
+        button {
+          float: right;
+          @include icons(40px, 40px, $primary, 22px, 40px, $indigo);
+          border-radius: 0;
+          margin: 5px;
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  &_price {
+    &_content {
+      @include grids(3, 1fr, 40px);
+    }
+    .cards {
+      @include cards(30px, $lightblue, $hover: false);
+      text-align: center;
+
+      i {
+        font-size: 80px;
+        color: $indigo;
+      }
+      h1 {
+        font-size: 40px;
+      }
+      button {
+        @include button(none, map-get($sizes, 2xl), map-get($sizes, sm), map-get($sizes, sm), none);
+        color: $primary;
+        text-decoration: underline;
+        letter-spacing: 1px;
+        .icons {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

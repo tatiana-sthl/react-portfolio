@@ -1,0 +1,106 @@
+@import "config";
+@import "header";
+@import "side";
+@import "home";
+@import "responsive";
+
+body {
+  background-image: url("../images/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: set-text-color($white);
+  font-family: $font-family-sans-serif;
+}
+a {
+  @include defaultValue;
+  @include trsansition;
+
+  &:hover {
+    color: $primary;
+  }
+}
+ul,
+button {
+  @include defaultValue;
+}
+
+.main-div {
+  width: $w-4xl;
+  margin: auto;
+  @include flex(space-between, none, none);
+  padding: $p-xl;
+}
+.side {
+  width: $w-sm;
+  background-color: $lightblue;
+  @include shadow;
+  height: 10%;
+}
+main {
+  width: $w-2xl;
+}
+
+$colors: (
+  twitter: $black,
+  dribbble: $indigo,
+  instagram: $primary,
+);
+
+@each $name, $color in $colors {
+  .#{$name} {
+    @include icons(50px, 50px, #ff43cb, 25px, 50px, $primary);
+    background: $color;
+    margin: 5px;
+  }
+}
+
+$backgrouds: (
+  skill1: linear-gradient(to right, #ff43cb, #ff56a1, #ff7882, #ff9a74, #feb779),
+  skill2: linear-gradient(to right, #806dfa, #009eff, #00c1ff, #00dcf8, #6ef2e1),
+  skill3: linear-gradient(to right, #8865dd, #9c63dc, #ae62d9, #bf60d6, #cf5ed2),
+);
+
+@each $skill, $backgroud in $backgrouds {
+  .#{$skill} {
+    background: $backgroud;
+  }
+}
+
+.button {
+  @include button($indigo, map-get($sizes, 2xl), map-get($sizes, sm), map-get($sizes, sm), $primary);
+}
+.sm_button {
+  @include button($primary, map-get($sizes, 2xl), map-get($sizes, sm), map-get($sizes, sm), $indigo);
+  span {
+    margin: 0;
+  }
+}
+
+.container {
+  @include shadow;
+  padding: 30px;
+  background: $black;
+  margin-top: 30px;
+}
+
+.heading {
+  font-weight: 700;
+  margin: 1rem 0 1rem;
+  text-transform: capitalize;
+  color: white;
+  font-size: 22px;
+  line-height: 60px;
+}
+
+.icon {
+  @include icons(60px, 60px, $indigo, 22px, 60px, $primary);
+}
+
+.pages {
+  @extend .container;
+  height: 90vh;
+  font-size: 50px;
+  color: $primary;
+}
+
